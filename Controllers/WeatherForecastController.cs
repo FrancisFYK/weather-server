@@ -38,8 +38,8 @@ namespace WeatherServer.Controllers
         }
 
 
-        [HttpGet("{id}")]
-        public WeatherForecast Get(int id)
+        [HttpGet("detail")]
+        public WeatherForecast Get([FromQuery]int id)
         {
             return new WeatherForecast
             {
