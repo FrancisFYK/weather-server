@@ -36,5 +36,17 @@ namespace WeatherServer.Controllers
             })
             .ToArray();
         }
+
+
+        [HttpGet("{id}")]
+        public WeatherForecast Get(int id)
+        {
+            return new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(id),
+                TemperatureC = id,
+                Summary = Summaries[id]
+            };
+        }
     }
 }
