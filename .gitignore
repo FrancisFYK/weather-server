@@ -1,0 +1,8 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/.vs
+/WeatherServer/.vs/WeatherServer/v16/.suo
+/WeatherServer/.vs/WeatherServer/v16
+/WeatherServer/obj
